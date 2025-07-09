@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bg-img {
+    background-image: url('clg.png');
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enquiry-form {
+    background: rgba(255,255,255,0.95);
+    padding: 30px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #ccc;
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enquiry-form h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 8px;
+}
+.enquiry-form label {
+    font-weight: 500;
+}
+.enquiry-form input,
+.enquiry-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #f8fafc;
+}
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 7px 0 10px 0;
+}
+.enquiry-form button {
+    background: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 11px 0;
+    font-size: 1.07rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s, transform 0.2s;
+}
+.enquiry-form button:hover {
+    background: #0055aa;
+    transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 600px) {
+    .enquiry-form {
+        padding: 12px 4px;
+        max-width: 98vw;
+    }
+}
